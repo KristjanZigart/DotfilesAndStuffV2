@@ -1,5 +1,5 @@
 import:
-  - ~/.config/alacritty/tokyonight_storm.yml # There are other themes in that folder
+  - ~/.config/alacritty/cyber_punk_neon.yaml # There are other themes in that folder
 
 font:
   # The normal (roman) font face to use.
@@ -20,7 +20,7 @@ font:
     # Style can be specified to pick a specific face.
     style: Italic
 
-  size: 9
+  size: 12
 
 draw_bold_text_with_bright_colors: true
 
@@ -29,18 +29,31 @@ env:
 
 window:
   opacity: 1.0
-  decorations: "None"
   padding:
-    x: 10
-    y: 10
+    x: 5
+    y: 5
   dynamic_padding: true
   dynamic_title: true
+  startup_mode: Maximized
+
+scrolling: 
+  history: 10000
+  multiplier: 3
 
 mouse:
   hide_when_typing: true
 selection:
   # When set to `true`, selected text will be copied to the primary clipboard.
   save_to_clipboard: true
+
+cursor:
+  blink_interval: 750
+  blink_timeout: 5
+  unfocused_hollow: true
+  thickness: 0.3
+  style:
+    shape: Underline
+    blinking: On
 
 hints:
   alphabet: "jfkdls;ahgurieowpq"
